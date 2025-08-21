@@ -24,6 +24,17 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				surface: 'hsl(var(--surface))',
+				'surface-muted': 'hsl(var(--surface-muted))',
+				'medical-primary': 'hsl(var(--medical-primary))',
+				'medical-primary-light': 'hsl(var(--medical-primary-light))',
+				'medical-primary-dark': 'hsl(var(--medical-primary-dark))',
+				'medical-secondary': 'hsl(var(--medical-secondary))',
+				'medical-accent': 'hsl(var(--medical-accent))',
+				success: 'hsl(var(--success))',
+				warning: 'hsl(var(--warning))',
+				danger: 'hsl(var(--danger))',
+				info: 'hsl(var(--info))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -63,6 +74,15 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+			},
+			boxShadow: {
+				'medical': 'var(--shadow-medical)',
+				'success': 'var(--shadow-success)',
+				'warning': 'var(--shadow-warning)',
+				'elegant': 'var(--shadow-elegant)',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -87,6 +107,7 @@ export default {
 				}
 			},
 			animation: {
+				'pulse-medical': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
