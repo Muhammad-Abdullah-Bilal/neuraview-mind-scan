@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { Link } from "react-router-dom";
 import { 
   TrendingUp, 
   Calendar, 
@@ -216,17 +217,23 @@ export const Dashboard: React.FC = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-3">
-              <Button variant="outline" className="w-full justify-start">
-                <Calendar className="w-4 h-4 mr-2" />
-                Schedule Next Appointment
+              <Button variant="outline" className="w-full justify-start" asChild>
+                <Link to="/schedule-appointment">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  Schedule Next Appointment
+                </Link>
               </Button>
-              <Button variant="outline" className="w-full justify-start">
-                <FileText className="w-4 h-4 mr-2" />
-                Share Results with Doctor
+              <Button variant="outline" className="w-full justify-start" asChild>
+                <Link to="/share-results">
+                  <FileText className="w-4 h-4 mr-2" />
+                  Share Results with Doctor
+                </Link>
               </Button>
-              <Button variant="outline" className="w-full justify-start">
-                <Users className="w-4 h-4 mr-2" />
-                Add Family Member Access
+              <Button variant="outline" className="w-full justify-start" asChild>
+                <Link to="/family-access">
+                  <Users className="w-4 h-4 mr-2" />
+                  Add Family Member Access
+                </Link>
               </Button>
             </div>
 

@@ -6,6 +6,7 @@ import { ResultDisplay } from '@/components/ResultDisplay';
 import { Dashboard } from '@/components/Dashboard';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Brain, Upload, MessageCircle, ArrowRight, Shield, Clock, Users } from "lucide-react";
 
 interface AssessmentResult {
@@ -117,6 +118,23 @@ const Index = () => {
                 <MessageCircle className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
                 Take Memory Test
               </Button>
+            </div>
+
+            {/* Auth Links */}
+            <div className="flex items-center justify-center space-x-4 mt-6">
+              <Link 
+                to="/login" 
+                className="text-sm text-medical-primary hover:text-medical-accent font-medium medical-transition"
+              >
+                Sign In
+              </Link>
+              <span className="text-muted-foreground">•</span>
+              <Link 
+                to="/signup" 
+                className="text-sm text-medical-primary hover:text-medical-accent font-medium medical-transition"
+              >
+                Create Account
+              </Link>
             </div>
 
             {/* Trust Indicators */}
